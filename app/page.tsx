@@ -1,6 +1,6 @@
 import { Suspense } from 'react'
-import Post from './PostRevalidate'
-import PostRevalidate from './PostRevalidate'
+import Post from './Post'
+import { PostRevalidate } from './PostRevalidate'
 
 // export const dynamic = 'force-dynamic'
 

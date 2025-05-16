@@ -22,7 +22,7 @@ const getPosts = unstable_cache(
   { revalidate: 5, tags: ['temperature'] } // Expire after 5 seconds
 )
 
-const Post = async () => {
+export const PostUnstable = async () => {
   const { post, time } = await getPosts()
 
   return (
@@ -33,5 +33,3 @@ const Post = async () => {
     </div>
   )
 }
-
-export default Post

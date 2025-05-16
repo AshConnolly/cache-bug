@@ -18,7 +18,7 @@ const getPost = async () => {
   }
 }
 
-const Post = async () => {
+export const PostRevalidate = async () => {
   const { post, time } = await getPost()
 
   return (
@@ -29,5 +29,3 @@ const Post = async () => {
     </div>
   )
 }
-
-export default Post
